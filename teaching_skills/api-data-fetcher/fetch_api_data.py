@@ -48,18 +48,17 @@ class APIFetcher:
                     "wind_speed": 4.1,
                     "pressure": 1012,
                     "timestamp": datetime.now().isoformat()
-                }
+                }    
             else:
                 return {
                     "city": city,
-                    "temperature": 20.0,
-                    "humidity": 60,
-                    "description": "moderate rain",
+                    "temperature": 27.0,
+                    "humidity": 80,
+                    "description": "多云",
                     "wind_speed": 2.5,
-                    "pressure": 1015,
-                    "timestamp": datetime.now().isoformat(),
-                    "note": "模拟数据 - 实际使用时需要真实API密钥"
+                    "pressure": 1012,
                 }
+
         except Exception as e:
             return {"error": f"获取天气信息失败: {str(e)}"}
 
