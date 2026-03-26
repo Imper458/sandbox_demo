@@ -102,6 +102,10 @@ df.to_excel('output.xlsx', index=False)
 
 ### ❌ WRONG - Hardcoding Calculated Values
 ```python
+import pandas as pd
+
+# Read Excel
+df = pd.read_excel('file.xlsx')
 # Bad: Calculating in Python and hardcoding result
 total = df['Sales'].sum()
 sheet['B10'] = total  # Hardcodes 5000

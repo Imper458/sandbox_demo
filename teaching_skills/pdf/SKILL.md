@@ -45,6 +45,7 @@ with open("merged.pdf", "wb") as output:
 
 #### Split PDF
 ```python
+from pypdf import PdfWriter, PdfReader
 reader = PdfReader("input.pdf")
 for i, page in enumerate(reader.pages):
     writer = PdfWriter()
@@ -55,6 +56,7 @@ for i, page in enumerate(reader.pages):
 
 #### Extract Metadata
 ```python
+from pypdf import PdfWriter, PdfReader
 reader = PdfReader("document.pdf")
 meta = reader.metadata
 print(f"Title: {meta.title}")
@@ -65,6 +67,7 @@ print(f"Creator: {meta.creator}")
 
 #### Rotate Pages
 ```python
+from pypdf import PdfWriter, PdfReader
 reader = PdfReader("input.pdf")
 writer = PdfWriter()
 
@@ -90,6 +93,7 @@ with pdfplumber.open("document.pdf") as pdf:
 
 #### Extract Tables
 ```python
+import pdfplumber
 with pdfplumber.open("document.pdf") as pdf:
     for i, page in enumerate(pdf.pages):
         tables = page.extract_tables()
@@ -102,6 +106,7 @@ with pdfplumber.open("document.pdf") as pdf:
 #### Advanced Table Extraction
 ```python
 import pandas as pd
+import pdfplumber
 
 with pdfplumber.open("document.pdf") as pdf:
     all_tables = []

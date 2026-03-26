@@ -1,0 +1,8 @@
+{
+  "name": "teaching-docx-skill",
+  "private": true,
+  "dependencies": {
+    "docx": "*"
+  }
+}
+

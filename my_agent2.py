@@ -2,7 +2,7 @@ from pathlib import Path
 
 from deepagents import create_deep_agent, CompiledSubAgent
 from langgraph.checkpoint.memory import InMemorySaver
-from my_agent import build_local_shell_backend, llm
+from src.agents.my_agent import build_local_shell_backend, llm
 from langchain.agents import create_agent
 
 if __name__ == '__main__':

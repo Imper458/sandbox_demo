@@ -1,0 +1,4 @@
+# Python dependencies for docx skill (office XML manipulation).
+defusedxml
+lxml
+

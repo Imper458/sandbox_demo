@@ -1,0 +1,6 @@
+# Python dependencies for pptx skill
+markitdown[pptx]
+Pillow
+defusedxml
+lxml
+

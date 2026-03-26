@@ -1,0 +1,6 @@
+# Python dependencies for xlsx skill
+pandas
+openpyxl
+defusedxml
+lxml
+
